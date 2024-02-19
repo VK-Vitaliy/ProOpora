@@ -2,10 +2,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-# Create your views here.
 def index(request):
-    return HttpResponse("Сайт ProOpora")
+    context = {'title': 'Home',
+               'content': 'Main page - Shop Home',
+               }
+
+    return render(request, template_name='mainapp/index.html', context=context)
 
 
-def categories(requset):
-    return HttpResponse("Категории товаров")
+def about(request):
+    return HttpResponse("О компании ProOpora")
