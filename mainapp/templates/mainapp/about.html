@@ -1,0 +1,23 @@
+{% extends "mainapp/base.html" %}
+{% load static %}
+
+<!-- Стиль footer-a для главной страницы -->
+{% block css %}
+    <link rel="stylesheet" href={% static "deps/css/my_footer_css.css" %}>
+{% endblock %}
+
+<!-- Контент на странице -->
+{% block content %}
+    <div class="mt-5 pt-1 bg-light shadow-lg rounded" style="--bs-bg-opacity: .7">
+        <h3 class="p-2"><strong>{{ content }}</strong></h3>
+        <p class="p-2">{{ text_on_page }}</p>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; ProOpora 2024</p>
+        </div>
+    </footer>
+{% endblock %}

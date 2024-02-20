@@ -1,14 +1,19 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
 def index(request):
-    context = {'title': 'Home',
-               'content': 'Main page - Shop Home',
+    context = {'title': 'ProOpora',
+               'content': 'Торгово-производственная компания - ProOpora',
                }
 
-    return render(request, template_name='mainapp/index.html', context=context)
+    return render(request, 'mainapp/index.html', context)
 
 
 def about(request):
-    return HttpResponse("О компании ProOpora")
+    context = {'title': 'ProOpora',
+               'content': 'О компании',
+               'text_on_page': 'Торгово-производственная компания - ProOpora, '
+                               'производство и поставка металлических опор '
+                               'освещения, осветительных мачт и молниеотводов',
+               }
+    return render(request, 'mainapp/about.html', context)
