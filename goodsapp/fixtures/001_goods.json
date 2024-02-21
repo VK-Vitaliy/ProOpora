@@ -1,0 +1,86 @@
+[
+  {
+    "model": "goodsapp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Опора НФГ",
+      "slug": "opora-nfg",
+      "description": "Несиловая фланцевая граненая опора НФГ",
+      "image": "",
+      "price": "16700.00",
+      "discount": "0.00",
+      "quantity": 20,
+      "category": 1
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Опора НФ",
+      "slug": "opora-nf",
+      "description": "Несиловая фланцевая трубчатая опора НФ",
+      "image": "",
+      "price": "9310.00",
+      "discount": "10.00",
+      "quantity": 10,
+      "category": 2
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 3,
+    "fields": {
+      "name": "Молниеотвод МОГК",
+      "slug": "molnieotvod-mogk",
+      "description": "Молниеотвод на базе граненой конической опоры",
+      "image": "",
+      "price": "43800.00",
+      "discount": "0.00",
+      "quantity": 5,
+      "category": 3
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 4,
+    "fields": {
+      "name": "Мачта ВГН",
+      "slug": "machta-vgn",
+      "description": "Высокомачтовая опора со стационарной короной, лестницей и площадками отдыха",
+      "image": "",
+      "price": "457000.00",
+      "discount": "0.00",
+      "quantity": 2,
+      "category": 4
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 5,
+    "fields": {
+      "name": "Кронштейн Стандарт",
+      "slug": "kronshtejn-standart",
+      "description": "Кронштейн Стандарт серии 1 под консольный светильник",
+      "image": "",
+      "price": "3280.00",
+      "discount": "0.00",
+      "quantity": 35,
+      "category": 5
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 6,
+    "fields": {
+      "name": "Закладная деталь ЗДФ",
+      "slug": "zakladnaya-detal-zdf",
+      "description": "Закладная деталь фундамента ЗДФ для обустройства блочного фундамента опоры",
+      "image": "",
+      "price": "8130.00",
+      "discount": "0.00",
+      "quantity": 5,
+      "category": 6
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "model": "goodsapp.category",
+        "pk": 1,
+        "fields": {
+            "name": "Уличные опоры освещения",
+            "slug": "ulichnye-opory-osvesheniya"
+        }
+    },
+    {
+        "model": "goodsapp.category",
+        "pk": 2,
+        "fields": {
+            "name": "Декоративные (парковые) опоры освещения",
+            "slug": "dekorativnye-parkovye-opory-osvesheniya"
+        }
+    },
+    {
+        "model": "goodsapp.category",
+        "pk": 3,
+        "fields": {
+            "name": "Молниеотводы",
+            "slug": "molnieotvody"
+        }
+    },
+    {
+        "model": "goodsapp.category",
+        "pk": 4,
+        "fields": {
+            "name": "Мачты освещения и связи",
+            "slug": "machty-osvesheniya-i-svyazi"
+        }
+    },
+    {
+        "model": "goodsapp.category",
+        "pk": 5,
+        "fields": {
+            "name": "Кронштейны, оголовники, короны",
+            "slug": "kronshtejny-ogolovniki-korony"
+        }
+    },
+    {
+        "model": "goodsapp.category",
+        "pk": 6,
+        "fields": {
+            "name": "Закладные детали фундаментов",
+            "slug": "zakladnye-detali-fundamentov"
+        }
+    }
+]
