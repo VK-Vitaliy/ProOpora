@@ -3,12 +3,9 @@ from goodsapp.models import Category
 
 
 def index(request):
-    categories = Category.objects.all()
     context = {'title': 'ProOpora',
                'content': 'Торгово-производственная компания - ProOpora',
-               'categories': categories
                }
-
     return render(request, 'mainapp/index.html', context)
 
 
