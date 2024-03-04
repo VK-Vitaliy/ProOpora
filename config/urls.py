@@ -22,9 +22,9 @@ from config import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainapp.urls', namespace='mainapp')),
-    path('catalog/', include('goodsapp.urls', namespace='goodsapp'))
+    path('catalog/', include('goodsapp.urls', namespace='catalog'))
 ]
 
 if settings.DEBUG:
-    urlpatterns.append(path("__debug__/", include("debug_toolbar.urls")), )
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns.append(path("__debug__/", include("debug_toolbar.urls")))
+    urlpatterns.append(*static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))
