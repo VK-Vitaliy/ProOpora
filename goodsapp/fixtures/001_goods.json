@@ -89,7 +89,7 @@
     "fields": {
       "name": "Мачта ВГМ",
       "slug": "machta-vgm",
-      "description": "Высокомачтовая опора со мобильной короной",
+      "description": "Высокомачтовая опора с мобильной короной",
       "image": "goods_images/vgm.jpg",
       "price": "633000.00",
       "discount": "0.00",
