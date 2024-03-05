@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_list_or_404
 
 from goodsapp.models import Product
 
 
-def catalog(request):
-    goods = Product.objects.all()
+def catalog(request, category_slug):
+    goods = get_list_or_404(Product.objects.filter(category__slug=category_slug))
     context = {
         'title': 'ProOpora - catalog',
         'goods': goods

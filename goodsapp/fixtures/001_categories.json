@@ -46,5 +46,13 @@
             "name": "Закладные детали фундаментов",
             "slug": "zakladnye-detali-fundamentov"
         }
+    },
+        {
+        "model": "goodsapp.category",
+        "pk": 7,
+        "fields": {
+            "name": "Комплектующие для опор, мачт, молниеотводов",
+            "slug": "komplektuyushie-dlya-opor-macht-molnieotvodov"
+        }
     }
 ]
