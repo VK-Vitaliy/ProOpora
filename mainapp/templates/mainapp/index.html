@@ -1,20 +1,95 @@
 {% extends "mainapp/base.html" %}
 {% load static %}
 
-<!-- Стиль footer-a для главной страницы -->
-{% block css %}
-    <link rel="stylesheet" href={% static "deps/css/my_footer_css.css" %}>
-{% endblock %}
-
 <!-- Контент на странице -->
 {% block content %}
-    <h1 class="mt-5 pt-1"><strong>{{ content }}</strong></h1>
-{% endblock %}
-
-{% block footer %}
-    <footer class="py-4 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; ProOpora 2024</p>
+        <div class="row py-3 gx-3">
+            <!-- Категория Уличные опоры освещения -->
+            <div class="col-md-6">
+                <div class="card rounded">
+                    <img height="300" src="{{ categories.0.image.url }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <a href={% url "goodsapp:index" category_slug=categories.0.slug %}>
+                            <p class="card-header-tabs">{{ categories.0.name }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Категория Молниеотводы -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img height="300" src="{{ categories.2.image.url }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <a href={% url "goodsapp:index" category_slug=categories.2.slug  %}>
+                            <p class="card-header-tabs">{{ categories.2.name }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Категория мачты -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img height="300" src="{{ categories.3.image.url }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <a href={% url "goodsapp:index" category_slug=categories.3.slug  %}>
+                            <p class="card-header-tabs">{{ categories.3.name }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div class="row gx-3">
+            <!-- Категория парковые опоры -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img height="300" src="{{ categories.1.image.url }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <a href={% url "goodsapp:index" category_slug=categories.1.slug %}>
+                            <p class="card-header-tabs">{{ categories.1.name }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Категория кронштейны -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img height="300" src="{{ categories.4.image.url }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <a href={% url "goodsapp:index" category_slug=categories.4.slug %}>
+                            <p class="card-header-tabs">{{ categories.4.name }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Категория ЗДФ -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img height="300" src="{{ categories.5.image.url }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <a href={% url "goodsapp:index" category_slug=categories.5.slug %}>
+                            <p class="card-header-tabs">{{ categories.5.name }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Категория комплектующие-->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img height="300" src="{{ categories.6.image.url }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <a href={% url "goodsapp:index" category_slug=categories.6.slug %}>
+                            <p class="card-header-tabs">{{ categories.6.name }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

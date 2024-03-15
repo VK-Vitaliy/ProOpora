@@ -116,19 +116,11 @@
 
                 <li class="page-item {% if not goods.has_next %}disabled{% endif %}">
                     <a class="page-link"
-                       href="{% if goods.has_next %}?{% change_params page=goods.next_page_number %}{% else %}
-                    #
+                       href="{% if goods.has_next %}?{% change_params page=goods.next_page_number %}
+                    {% else %}#
                     {% endif %}">Следующая</a>
                 </li>
             </div>
         </ul>
     </nav>
-{% endblock %}
-
-{% block footer %}
-    <footer class="py-4 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
-        </div>
-    </footer>
 {% endblock %}

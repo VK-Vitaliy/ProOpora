@@ -4,7 +4,8 @@
         "pk": 1,
         "fields": {
             "name": "Уличные опоры освещения",
-            "slug": "ulichnye-opory-osvesheniya"
+            "slug": "ulichnye-opory-osvesheniya",
+            "image": "categories_images/opora.png"
         }
     },
     {
@@ -12,7 +13,8 @@
         "pk": 2,
         "fields": {
             "name": "Декоративные (парковые) опоры освещения",
-            "slug": "dekorativnye-parkovye-opory-osvesheniya"
+            "slug": "dekorativnye-parkovye-opory-osvesheniya",
+            "image": "categories_images/park.png"
         }
     },
     {
@@ -20,7 +22,8 @@
         "pk": 3,
         "fields": {
             "name": "Молниеотводы",
-            "slug": "molnieotvody"
+            "slug": "molnieotvody",
+            "image": "categories_images/molnieotvod.png"
         }
     },
     {
@@ -28,7 +31,8 @@
         "pk": 4,
         "fields": {
             "name": "Мачты освещения и связи",
-            "slug": "machty-osvesheniya-i-svyazi"
+            "slug": "machty-osvesheniya-i-svyazi",
+            "image": "categories_images/machta.png"
         }
     },
     {
@@ -36,7 +40,8 @@
         "pk": 5,
         "fields": {
             "name": "Кронштейны, оголовники, короны",
-            "slug": "kronshtejny-ogolovniki-korony"
+            "slug": "kronshtejny-ogolovniki-korony",
+            "image": "categories_images/kronsht.png"
         }
     },
     {
@@ -44,7 +49,8 @@
         "pk": 6,
         "fields": {
             "name": "Закладные детали фундаментов",
-            "slug": "zakladnye-detali-fundamentov"
+            "slug": "zakladnye-detali-fundamentov",
+            "image": "categories_images/zdf.png"
         }
     },
         {
@@ -52,7 +58,8 @@
         "pk": 7,
         "fields": {
             "name": "Комплектующие для опор, мачт, молниеотводов",
-            "slug": "komplektuyushie-dlya-opor-macht-molnieotvodov"
+            "slug": "komplektuyushie-dlya-opor-macht-molnieotvodov",
+            "image": "categories_images/complect.png"
         }
     }
 ]
