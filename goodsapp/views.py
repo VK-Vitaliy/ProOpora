@@ -1,5 +1,5 @@
 from django.core.paginator import Paginator
-from django.shortcuts import render, get_list_or_404
+from django.shortcuts import render
 
 from goodsapp.models import Product
 from goodsapp.utils import q_search
@@ -16,7 +16,7 @@ def catalog(request, category_slug=None):
     elif query:
         goods = q_search(query)
     else:
-        goods = get_list_or_404(Product.objects.filter(category__slug=category_slug))
+        goods = Product.objects.filter(category__slug=category_slug)
 
     if on_sale:
         goods = goods.filter(discount__gt=0)
@@ -27,7 +27,6 @@ def catalog(request, category_slug=None):
     paginator = Paginator(goods, per_page=3)
     current_page = paginator.page(int(page))
     context = {
-        'title': 'ProOpora - catalog',
         'goods': current_page,
         'slug_url': category_slug
     }
