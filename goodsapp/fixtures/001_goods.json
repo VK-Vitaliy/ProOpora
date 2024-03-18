@@ -59,7 +59,7 @@
     "model": "goodsapp.product",
     "pk": 5,
     "fields": {
-      "name": "Кронштейн Стандарт",
+      "name": "Кронштейн Стандарт (Серия 1)",
       "slug": "kronshtejn-standart-seriya-1",
       "description": "Кронштейн Стандарт серии 1 под консольный светильник",
       "image": "goods_images/standart_seriya1_01.png",
@@ -202,7 +202,7 @@
       "name": "Опора СФ",
       "slug": "opora-sf",
       "description": "Опора силовая фланцевая трубчатая СФ для освещения любых объектов с установкой кронштейнов с большим количеством светильников, для подвеса проводов СИП и установки рекламных и иных конструкций",
-      "image": "goods_images/SF_01.png",
+      "image": "goods_images/sf_01.png",
       "price": "45700.00",
       "discount": "0.00",
       "quantity": 10,
@@ -216,8 +216,22 @@
       "name": "Опора СП",
       "slug": "opora-sp",
       "description": "Опора силовая прямостоечная трубчатая СП для освещения любых объектов с установкой кронштейнов с большим количеством светильников, для подвеса проводов СИП и установки рекламных и иных конструкций",
-      "image": "goods_images/SF_01.png",
+      "image": "goods_images/sp_01.png",
       "price": "53100.00",
+      "discount": "0.00",
+      "quantity": 10,
+      "category": 1
+    }
+  },
+      {
+    "model": "goodsapp.product",
+    "pk": 17,
+    "fields": {
+      "name": "Вводной щиток БЩСКО",
+      "slug": "vvodnoj-shchitok-BSHCHSKO",
+      "description": "Вводной щиток для кабеля в опоры освещения диаметром от 100 мм",
+      "image": "goods_images/vvod_kvitter_01.png",
+      "price": "3700.00",
       "discount": "0.00",
       "quantity": 10,
       "category": 1
