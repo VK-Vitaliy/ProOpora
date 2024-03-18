@@ -6,7 +6,7 @@
       "name": "Опора НФГ",
       "slug": "opora-nfg",
       "description": "Несиловая фланцевая граненая опора НФГ",
-      "image": "goods_images/nfg.jpg",
+      "image": "goods_images/nfg_01.png",
       "price": "16700.00",
       "discount": "0.00",
       "quantity": 20,
@@ -20,7 +20,7 @@
       "name": "Опора НФ",
       "slug": "opora-nf",
       "description": "Несиловая фланцевая трубчатая опора НФ",
-      "image": "goods_images/nf.jpg",
+      "image": "goods_images/nf_01.png",
       "price": "9310.00",
       "discount": "10.00",
       "quantity": 10,
@@ -31,10 +31,10 @@
     "model": "goodsapp.product",
     "pk": 3,
     "fields": {
-      "name": "Молниеотвод МОГК",
-      "slug": "molnieotvod-mogk",
-      "description": "Молниеотвод на базе граненой конической опоры",
-      "image": "goods_images/mogk.png",
+      "name": "Молниеотвод на базе опоры НФГ",
+      "slug": "molnieotvod-na-baze-opory-nfg",
+      "description": "Молниеотвод на базе опоры НФГ для защиты от ударов молний зданий, сооружений, автозаправок и иных объектов",
+      "image": "goods_images/molnieotvod_oi_01.png",
       "price": "43800.00",
       "discount": "0.00",
       "quantity": 5,
@@ -48,7 +48,7 @@
       "name": "Мачта ВГН",
       "slug": "machta-vgn",
       "description": "Высокомачтовая опора со стационарной короной, лестницей и площадками отдыха",
-      "image": "goods_images/vgn.jpg",
+      "image": "goods_images/vgn_01.png",
       "price": "457000.00",
       "discount": "0.00",
       "quantity": 2,
@@ -60,9 +60,9 @@
     "pk": 5,
     "fields": {
       "name": "Кронштейн Стандарт",
-      "slug": "kronshtejn-standart",
+      "slug": "kronshtejn-standart-seriya-1",
       "description": "Кронштейн Стандарт серии 1 под консольный светильник",
-      "image": "goods_images/kronshtein_standart.jpg",
+      "image": "goods_images/standart_seriya1_01.png",
       "price": "3280.00",
       "discount": "0.00",
       "quantity": 35,
@@ -76,7 +76,7 @@
       "name": "Закладная деталь ЗДФ",
       "slug": "zakladnaya-detal-zdf",
       "description": "Закладная деталь фундамента ЗДФ для обустройства блочного фундамента опоры",
-      "image": "goods_images/zdf.jpg",
+      "image": "goods_images/zdf_01.png",
       "price": "8130.00",
       "discount": "0.00",
       "quantity": 5,
@@ -90,7 +90,7 @@
       "name": "Мачта ВГМ",
       "slug": "machta-vgm",
       "description": "Высокомачтовая опора с мобильной короной",
-      "image": "goods_images/vgm.jpg",
+      "image": "goods_images/vgm_01.png",
       "price": "633000.00",
       "discount": "0.00",
       "quantity": 2,
@@ -101,14 +101,126 @@
     "model": "goodsapp.product",
     "pk": 8,
     "fields": {
-      "name": "Корона стационарная",
-      "slug": "korona-stacionarnaya",
+      "name": "Кронштейн корона",
+      "slug": "kronshtejn-korona",
       "description": "Кронштейн корона под прожекторные светильники",
-      "image": "goods_images/korona.jpg",
+      "image": "goods_images/korona_01.png",
       "price": "6380.00",
       "discount": "10.00",
       "quantity": 10,
       "category": 5
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 9,
+    "fields": {
+      "name": "Кронштейн Т-образный (серия 14)",
+      "slug": "kronshtejn-t-obraznyj-seriya-14",
+      "description": "Кронштейн Т-образный (серия 14) для прожекторных светильников",
+      "image": "goods_images/T-obraznyj_01.png",
+      "price": "4280.00",
+      "discount": "0.00",
+      "quantity": 35,
+      "category": 5
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 10,
+    "fields": {
+      "name": "Кронштейн Вектор (Серия 2)",
+      "slug": "kronshtejn-vektor-seriya-2",
+      "description": "Кронштейн Вектор серии 2 под консольный светильник",
+      "image": "goods_images/vector_seriya2_01.png",
+      "price": "3680.00",
+      "discount": "0.00",
+      "quantity": 35,
+      "category": 5
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 11,
+    "fields": {
+      "name": "Опора ОГК",
+      "slug": "opora-ogk",
+      "description": "Опора граненая коническая ОГК для освещения дорог любого назначения, дворовых территорий, скверов, парков, автостоянок, объектов городского и муниципального управления (детских садов, школ, больниц, спортивных, развлекательных и культурных комплексов) и т.п.",
+      "image": "goods_images/OGK_01.png",
+      "price": "15700.00",
+      "discount": "0.00",
+      "quantity": 20,
+      "category": 1
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 12,
+    "fields": {
+      "name": "Мачта МГФ-М",
+      "slug": "machta-mgf-m",
+      "description": "Мачта с мобильной короной Тип МГФ-М",
+      "image": "goods_images/mgf-m_01.png",
+      "price": "633000.00",
+      "discount": "0.00",
+      "quantity": 3,
+      "category": 4
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 13,
+    "fields": {
+      "name": "Мачта МГФ-СР",
+      "slug": "machta-mgf-sr",
+      "description": "Мачта со стационарной короной Тип МГФ-СР",
+      "image": "goods_images/mgf-sr_01.png",
+      "price": "632000.00",
+      "discount": "0.00",
+      "quantity": 2,
+      "category": 4
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 14,
+    "fields": {
+      "name": "Опора НП",
+      "slug": "opora-np",
+      "description": "Опора несиловая трубчатая прямостоечная НП для освещения парков, скверов, архитектурных и спортивных объекто",
+      "image": "goods_images/NP_01.png",
+      "price": "9444.00",
+      "discount": "0.00",
+      "quantity": 10,
+      "category": 2
+    }
+  },
+  {
+    "model": "goodsapp.product",
+    "pk": 15,
+    "fields": {
+      "name": "Опора СФ",
+      "slug": "opora-sf",
+      "description": "Опора силовая фланцевая трубчатая СФ для освещения любых объектов с установкой кронштейнов с большим количеством светильников, для подвеса проводов СИП и установки рекламных и иных конструкций",
+      "image": "goods_images/SF_01.png",
+      "price": "45700.00",
+      "discount": "0.00",
+      "quantity": 10,
+      "category": 1
+    }
+  },
+    {
+    "model": "goodsapp.product",
+    "pk": 16,
+    "fields": {
+      "name": "Опора СП",
+      "slug": "opora-sp",
+      "description": "Опора силовая прямостоечная трубчатая СП для освещения любых объектов с установкой кронштейнов с большим количеством светильников, для подвеса проводов СИП и установки рекламных и иных конструкций",
+      "image": "goods_images/SF_01.png",
+      "price": "53100.00",
+      "discount": "0.00",
+      "quantity": 10,
+      "category": 1
     }
   }
 ]

@@ -36,3 +36,8 @@ body {
   border-radius: 15px;
   font-size: 0.7rem;
 }
+
+.card-image {
+    width: 100px;
+    height: 150px; /**или то которое по макету*/
+    object-fit: cover;}

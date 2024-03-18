@@ -55,11 +55,11 @@
 
         {% for product in goods %}
             <!-- Карта товара -->
-            <div class="col-lg-4 col-md-6 p-4">
+            <div class="col-lg-4 col-md-6 p-2" style="width: 20rem;">
                 <div class="card border-primary rounded custom-shadow">
 
                     {% if product.image %}
-                        <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                        <img src="{{ product.image.url }}" class="card-img-top" height="400" alt="{{ product.name }}">
                     {% else %}
                         <img src="{% static "deps/images/Not found image.png" %}" class="card-img-top"
                              alt="{{ product.name }}">
@@ -69,7 +69,7 @@
                         <a href="{% url "catalog:product" product.slug %}">
                             <p class="card-title">{{ product.name }}</p>
                         </a>
-                        <p class="card-text">{{ product.description|truncatechars:55 }}</p>
+                        <p class="card-text">{{ product.description|truncatechars:50 }}</p>
                         <p class="product_id">id: {{ product.display_id }}</p>
                         <div class="d-flex justify-content-between">
 
