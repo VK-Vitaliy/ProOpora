@@ -11,8 +11,39 @@
                     <img src="{{ product.image.url }}"
                          class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-8">
                     <p class="product_id mt-3">id: {{ product.display_id }}</p>
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+{#                    <table class="table table-striped table-hover table-sm table-responsive">#}
+{#                        <thead>#}
+{#                        <tr>#}
+{#                            <th scope="col">Наименование</th>#}
+{#                            <th scope="col">Тип ЗДФ</th>#}
+{#                            <th scope="col">Масса</th>#}
+{#                            <th scope="col">Размеры</th>#}
+{#                        </tr>#}
+{#                        </thead>#}
+{#                        <tbody>#}
+{#                        <tr>#}
+{#                            <th scope="row">НФГ-3,0-02-ц</th>#}
+{#                            <td>Mark</td>#}
+{#                            <td>Otto</td>#}
+{#                            <td>@mdo</td>#}
+{#                        </tr>#}
+{#                        <tr>#}
+{#                            <th scope="row">2</th>#}
+{#                            <td>Jacob</td>#}
+{#                            <td>Thornton</td>#}
+{#                            <td>@fat</td>#}
+{#                        </tr>#}
+{#                        <tr>#}
+{#                            <th scope="row">3</th>#}
+{#                            <td colspan="2">Larry the Bird</td>#}
+{#                            <td>@twitter</td>#}
+{#                        </tr>#}
+{#                        </tbody>#}
+{#                    </table>#}
                 </div>
                 <!-- Увеличить изображение в модальном окне -->
                 <div class="modal fade" id="imageModal1" tabindex="-1"
@@ -35,10 +66,18 @@
             <!-- Описание товара -->
             <div class="card-body">
                 <p class="card-text">Цена: <strong>{{ product.get_price }}</strong></p>
-                <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text">{{ product.description }}</p>
+
+
                 <a href="#" class="btn btn-dark add-to-cart">Добавить в корзину</a>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; ProOpora 2024</p>
+        </div>
+    </footer>
 {% endblock %}

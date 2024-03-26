@@ -212,7 +212,7 @@
 </section>
 
 {% block footer %}
-    <footer class="py-4 bg-dark position-relative">
+    <footer class="py-4 bg-dark {% if goods or index_flag %}position-relative{% endif %}">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; ProOpora 2024</p>
         </div>

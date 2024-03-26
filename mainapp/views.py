@@ -3,17 +3,18 @@ from goodsapp.models import Category
 
 
 def index(request):
-    ulichnye_opory = Category.objects.filter(pk=1)
-    parkovye_opory = Category.objects.filter(pk=2)
-    molnieotvody = Category.objects.filter(pk=3)
-    machty = Category.objects.filter(pk=4)
-    kronshtejny = Category.objects.filter(pk=5)
-    zdf = Category.objects.filter(pk=6)
-    komplektuyushie = Category.objects.filter(pk=7)
+    ulichnye_opory = Category.objects.filter(name='Уличные опоры освещения')
+    parkovye_opory = Category.objects.filter(name='Декоративные (парковые) опоры освещения')
+    molnieotvody = Category.objects.filter(name='Молниеотводы')
+    machty = Category.objects.filter(name='Мачты освещения и связи')
+    kronshtejny = Category.objects.filter(name='Кронштейны, оголовники, короны')
+    zdf = Category.objects.filter(name='Закладные детали фундаментов')
+    komplektuyushie = Category.objects.filter(name='Комплектующие для опор, мачт, молниеотводов')
 
     context = {'title': 'ProOpora',
                'content': 'Торгово-производственная компания - ProOpora',
-               'categories': [ulichnye_opory, parkovye_opory, molnieotvody, machty, kronshtejny, zdf, komplektuyushie]
+               'categories': [ulichnye_opory, parkovye_opory, molnieotvody, machty, kronshtejny, zdf, komplektuyushie],
+               'index_flag': True,
                }
     return render(request, 'mainapp/index.html', context)
 
