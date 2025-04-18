@@ -12,8 +12,8 @@
         "model": "goodsapp.category",
         "pk": 2,
         "fields": {
-            "name": "Декоративные (парковые) опоры освещения",
-            "slug": "dekorativnye-parkovye-opory-osvesheniya",
+            "name": "Декоративные (парковые) опоры",
+            "slug": "dekorativnye-parkovye-opory",
             "image": "categories_images/park.png"
         }
     },
@@ -57,8 +57,8 @@
         "model": "goodsapp.category",
         "pk": 7,
         "fields": {
-            "name": "Комплектующие для опор, мачт, молниеотводов",
-            "slug": "komplektuyushie-dlya-opor-macht-molnieotvodov",
+            "name": "Комплектующие для опор и мачт",
+            "slug": "komplektuyushie-dlya-opor-macht",
             "image": "categories_images/complect.png"
         }
     }

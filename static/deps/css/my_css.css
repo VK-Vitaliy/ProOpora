@@ -22,47 +22,56 @@ body {
 
 /* Хедер */
 .rs-header {
-    height: 60px;
+    height: 80px; /* Фиксированная высота */
     background: rgb(59, 98, 164) !important;
 }
 
-.full-width-bg {
-    background-color: rgb(59, 98, 164);
-    height: 100%;
-}
-
 .rs-header .navbar {
-    height: 100%;
     padding: 0;
+    height: 100%;
 }
 
 .rs-header .container {
     height: 100%;
+    display: flex;
+    align-items: center; /* Главное для вертикального центрирования */
 }
 
-.rs-header .navbar-brand,
-.rs-header .nav-link,
-.rs-header .dropdown-toggle,
-.rs-header .navbar-toggler {
+/* Логотип */
+.rs-header .navbar-brand {
+    min-height: 80px;
     display: flex;
     align-items: center;
-    height: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 15px 0;
+    margin-right: 20px;
+    font-size: 1.25rem;
 }
 
-.rs-header .navbar-nav {
-    height: 100%;
-}
-
+/* Пункты меню */
 .rs-header .nav-item {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.rs-header .dropdown-menu {
-    margin-top: 0 !important;
+.rs-header .nav-link,
+.rs-header .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 12px 0;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Поисковая строка */
+.rs-header .rs-search {
+    height: 38px;
+    margin: 0;
+}
+
+.rs-header .rs-search .form-control,
+.rs-header .rs-search-btn {
+    height: 100%;
 }
 
 .navbar-brand {
@@ -110,10 +119,10 @@ body {
 }
 
 .rs-search-btn {
-    background-color: var(--rs-orange);
+    background-color: #4da6ff;
+    border-color: #4da6ff;
     color: white;
     border-radius: 0 4px 4px 0;
-    border: 1px solid var(--rs-orange);
     height: 100%;
 }
 
@@ -131,7 +140,12 @@ body {
     padding-bottom: 30px;
 }
 
-/* Карточки товаров */
+/* Карточки товаров - обновлённые стили */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .rs-product-card {
     border: none;
     border-radius: 8px;
@@ -140,35 +154,50 @@ body {
     background-color: var(--rs-white);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
+    height: 100%; /* Важно: 100% высоты родителя */
+    display: flex; /* Ключевое свойство */
+    flex-direction: column;
 }
 
-.rs-product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.rs-product-img {
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid var(--rs-gray-dark);
-}
-
+/* Тело карточки */
 .card-body {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex-grow: 1; /* Заставляет растягиваться */
+    padding: 1rem; /* Добавляем отступы */
 }
 
+/* Заголовок и текст */
 .card-title {
     font-size: 1.1rem;
     color: var(--rs-blue-dark);
     margin-bottom: 0.75rem;
+    line-height: 1.3; /* Улучшает читаемость */
 }
 
 .card-text {
     color: var(--rs-text-light);
     font-size: 0.9rem;
-    flex-grow: 1;
+    flex-grow: 1; /* Растягивает текстовый блок */
+    margin-bottom: 1rem; /* Отступ перед кнопкой */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Ограничиваем до 3 строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 3.6em; /* Минимальная высота (2 строки) */
+}
+
+/* Изображение */
+.rs-product-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid var(--rs-gray-dark);
+}
+
+/* Кнопка в карточке */
+.mt-auto {
+    margin-top: auto; /* Прижимает кнопку к низу */
 }
 
 /* Кнопки */
@@ -189,16 +218,22 @@ body {
 /* Футер */
 .rs-footer {
     background: rgb(59, 98, 164) !important;
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .rs-footer a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85) !important;
     transition: color 0.3s ease;
 }
 
 .rs-footer a:hover {
-    color: white;
+    color: white !important;
     text-decoration: none;
+}
+
+.rs-footer p,
+.rs-footer .text-center {
+    color: rgba(255, 255, 255, 0.85) !important; /* Для обычного текста */
 }
 
 /* Адаптивность */
